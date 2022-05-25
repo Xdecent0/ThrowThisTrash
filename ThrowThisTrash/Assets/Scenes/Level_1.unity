@@ -384,6 +384,7 @@ MonoBehaviour:
   trash:
   - {fileID: 97771252031865573, guid: b7ab2228bb9fa4942b9a062c207a45e1, type: 3}
   - {fileID: 3765410337240681121, guid: f45813f235e5c754f9767be05534a7f1, type: 3}
+  spawnDelay: 1
 --- !u!1001 &1350054831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -456,6 +457,7 @@ GameObject:
   - component: {fileID: 1367570346}
   - component: {fileID: 1367570345}
   - component: {fileID: 1367570344}
+  - component: {fileID: 1367570347}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -528,6 +530,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1367570347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367570343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf13f9e58c8f3eb469718b3c7dc0b26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultResolution: {x: 720, y: 1280}
+  WidthOrHeight: 0
 --- !u!1001 &1868716785
 PrefabInstance:
   m_ObjectHideFlags: 0

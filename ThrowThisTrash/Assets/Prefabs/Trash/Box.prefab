@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7483141607834979590}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,4 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementPerSecond: -1
   speed: 0.1
+  deadZetPosition: -14
