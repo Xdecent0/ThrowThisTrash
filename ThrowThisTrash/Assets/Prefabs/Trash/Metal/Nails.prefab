@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 602886318093561759}
   - component: {fileID: 3438804669474282325}
   - component: {fileID: 1236780110092123369}
+  - component: {fileID: 9170559041932733600}
   m_Layer: 0
   m_Name: Nails
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3799325942444702336}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -96,3 +97,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6239881831769578202, guid: 8c0159700e49df948a7b1a741d607057, type: 3}
+--- !u!114 &9170559041932733600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3799325942444702336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPerSecond: -1
+  speed: 0.1
+  dead_Z_Position: -14
+  alive_Z_Position: 14
+  alive_Y_Position: 0.3

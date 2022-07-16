@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2366556366471704419}
   - component: {fileID: 1691218136544780486}
   - component: {fileID: 3502849048680059916}
+  - component: {fileID: 787979050433148236}
   m_Layer: 0
   m_Name: Canister
   m_TagString: Untagged
@@ -81,3 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &787979050433148236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3142495313790268889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPerSecond: -1
+  speed: 0.1
+  dead_Z_Position: -14
+  alive_Z_Position: 14
+  alive_Y_Position: 0.3

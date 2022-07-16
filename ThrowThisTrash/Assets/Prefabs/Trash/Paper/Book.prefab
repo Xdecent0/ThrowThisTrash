@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 8438231201431702793}
   - component: {fileID: 4806824063655428780}
   - component: {fileID: 7300812515832477286}
+  - component: {fileID: 2915638185535579260}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -187,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9102142347793405875}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3459, y: 1.3459, z: 1.3459}
   m_Children:
@@ -245,3 +246,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2915638185535579260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9102142347793405875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPerSecond: -1
+  speed: 0.1
+  dead_Z_Position: -14
+  alive_Z_Position: 14
+  alive_Y_Position: 0.3
