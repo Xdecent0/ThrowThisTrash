@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Trash_Movement : MonoBehaviour
 {
     [SerializeField] float movementPerSecond = -1;
     [SerializeField] float speed = 0.1f;
-    [SerializeField] float deadZetPosition = -14f;
+    [SerializeField] float dead_Z_Position = -14f;
+    [SerializeField] float alive_Z_Position = 14f;
+    [SerializeField] float alive_Y_Position = 0.3f;
 
     float firstRoad_pos = -3f;
     float secondRoad_pos = 0f;
@@ -14,6 +14,7 @@ public class Trash_Movement : MonoBehaviour
     float fourthRoad_pos = 6f;
     private void Start()
     {
+        gameObject.transform.position = new Vector3(0, alive_Y_Position, alive_Z_Position);
         int randomroad = Random.Range(1,5);
         switch (randomroad)
         {
@@ -38,7 +39,7 @@ public class Trash_Movement : MonoBehaviour
     // Delete this after adding trash cans
     private void Update()
     {
-        if (gameObject.transform.position.z < deadZetPosition)
+        if (gameObject.transform.position.z < dead_Z_Position)
         {
             Destroy(gameObject);
         }

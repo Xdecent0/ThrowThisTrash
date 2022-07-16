@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Trash_Swiping : MonoBehaviour, IBeginDragHandler, IDragHandler
+public class Trash_Swiping : MonoBehaviour/*IBeginDragHandler, IDragHandler*/
 {
    /* public Selecting selecting;
     public Bomb_Move Bomb_Move;
