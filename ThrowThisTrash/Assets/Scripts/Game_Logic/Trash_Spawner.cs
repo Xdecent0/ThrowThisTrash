@@ -8,9 +8,9 @@ public class Trash_Spawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(TestCoroutine());
+        StartCoroutine(SpawnObjects());
     }
-    IEnumerator TestCoroutine()
+    IEnumerator SpawnObjects()
     {
         while (true)
         {

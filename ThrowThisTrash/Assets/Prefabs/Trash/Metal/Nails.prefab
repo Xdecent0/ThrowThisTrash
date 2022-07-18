@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3438804669474282325}
   - component: {fileID: 1236780110092123369}
   - component: {fileID: 9170559041932733600}
+  - component: {fileID: -6805037495908216322}
   m_Layer: 0
   m_Name: Nails
   m_TagString: Untagged
@@ -109,8 +110,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPerSecond: -1
+  movementPerSecond: -0.5
   speed: 0.1
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
+  dead_Left_Position: -0.77
+  dead_Right_Position: 3.47
+  swiping: {fileID: 0}
+--- !u!65 &-6805037495908216322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3799325942444702336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.080333, y: 0.64745116, z: 0.8850093}
+  m_Center: {x: -0.060797125, y: 0.32441306, z: 0.03238164}

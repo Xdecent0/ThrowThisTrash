@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4834250996948573619}
   - component: {fileID: 7273949890313611641}
   - component: {fileID: 8030218433064604174}
+  - component: {fileID: 1132643077923525551}
   m_Layer: 0
   m_Name: BitCoins
   m_TagString: Untagged
@@ -94,8 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPerSecond: -1
+  movementPerSecond: -0.5
   speed: 0.1
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
+  dead_Left_Position: -0.77
+  dead_Right_Position: 3.47
+  swiping: {fileID: 0}
+--- !u!65 &1132643077923525551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219640925356935340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0866172, y: 0.36497647, z: 0.8364769}
+  m_Center: {x: -0.0070830584, y: 0.18731478, z: -0.05134715}

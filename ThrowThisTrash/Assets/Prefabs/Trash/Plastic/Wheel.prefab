@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4517796879083471341}
   - component: {fileID: 1825795247556490535}
   - component: {fileID: 969297835590135969}
+  - component: {fileID: 548484849190293616}
   m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
@@ -94,8 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPerSecond: -1
+  movementPerSecond: -0.5
   speed: 0.1
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
+  dead_Left_Position: -0.77
+  dead_Right_Position: 3.47
+  swiping: {fileID: 0}
+--- !u!65 &548484849190293616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168457733914023154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2825016, y: 0.5245245, z: 1.2825015}
+  m_Center: {x: 0.000000059604645, y: 0.2637088, z: 0}

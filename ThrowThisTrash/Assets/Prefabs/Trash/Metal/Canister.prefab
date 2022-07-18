@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1691218136544780486}
   - component: {fileID: 3502849048680059916}
   - component: {fileID: 787979050433148236}
+  - component: {fileID: 4301527837256669331}
   m_Layer: 0
   m_Name: Canister
   m_TagString: Untagged
@@ -94,8 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPerSecond: -1
+  movementPerSecond: -0.5
   speed: 0.1
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
+  dead_Left_Position: -0.77
+  dead_Right_Position: 3.47
+  swiping: {fileID: 0}
+--- !u!65 &4301527837256669331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3142495313790268889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55326205, y: 1.4866695, z: 1.016298}
+  m_Center: {x: 0, y: 0.7445024, z: -0.0009956956}

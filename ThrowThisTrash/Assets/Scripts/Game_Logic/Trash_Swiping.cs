@@ -1,36 +1,34 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-
-public class Trash_Swiping : MonoBehaviour/*IBeginDragHandler, IDragHandler*/
+using GG.Infrastructure.Utils.Swipe;
+public class Trash_Swiping : MonoBehaviour
 {
-   /* public Selecting selecting;
-    public Bomb_Move Bomb_Move;
-    public bool isTrash = false;
-    public bool isBomb = false;
-    public void OnBeginDrag(PointerEventData eventData)
+    [SerializeField] SwipeListener swipeListener;
+    [SerializeField] Trash_Movement trash_Movement;
+
+    private void OnEnable()
     {
-        if ((Mathf.Abs(eventData.delta.x)) > (Mathf.Abs(eventData.delta.y)))
+        swipeListener.OnSwipe.AddListener(OnSwipe);
+    }
+    private void OnSwipe(string swipe)
+    {
+        switch (swipe)
         {
-            if (eventData.delta.x > 0 && isTrash == true)
-            {
-                selecting.MoveRight();
-            }
-            else if (isTrash == true)
-            {
-                selecting.MoveLeft();
-            }
-            if (eventData.delta.x > 0 && isBomb == true)
-            {
-                Bomb_Move.MoveRight();
-            }
-            else if (isBomb == true)
-            {
-                Bomb_Move.MoveLeft();
-            }
+            case "Left":
+                trash_Movement.MoveLeft();
+                break;
+            case "Right":
+                trash_Movement.MoveRight();
+                break;
         }
     }
-    public void OnDrag(PointerEventData eventData)
+    private void OnDisable()
     {
+        swipeListener.OnSwipe.RemoveListener(OnSwipe);
     }
-   */
+
+    public void GetTrash(GameObject trash)
+    {
+        trash_Movement = trash.GetComponent<Trash_Movement>();
+    }
 }
+

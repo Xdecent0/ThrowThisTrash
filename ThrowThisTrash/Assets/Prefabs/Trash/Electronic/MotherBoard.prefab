@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8562692366157129987}
   - component: {fileID: 5850242019522141641}
   - component: {fileID: 569845983676256733}
+  - component: {fileID: 3983032217924753105}
   m_Layer: 0
   m_Name: MotherBoard
   m_TagString: Untagged
@@ -94,8 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447a8102b6ff34044af76763534de66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPerSecond: -1
+  movementPerSecond: -0.5
   speed: 0.1
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
+  dead_Left_Position: -0.77
+  dead_Right_Position: 3.47
+  swiping: {fileID: 0}
+--- !u!65 &3983032217924753105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345984340008500252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1623037, y: 0.29951036, z: 1.6393193}
+  m_Center: {x: -0.00000011920932, y: 0.15495294, z: 0.02215997}
