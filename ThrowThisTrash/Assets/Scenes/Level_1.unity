@@ -458,7 +458,7 @@ MonoBehaviour:
   - {fileID: 5236742550496197264, guid: 91ff09f5463740b478b1af7b58fe20b5, type: 3}
   - {fileID: 2888455828216099442, guid: 233c0851395598340bad7e4f05636650, type: 3}
   - {fileID: 5345984340008500252, guid: d0cc2bcb36cc65c46a861de66455c0af, type: 3}
-  spawnDelay: 1.25
+  spawnDelay: 1.5
 --- !u!1001 &1350054831
 PrefabInstance:
   m_ObjectHideFlags: 0

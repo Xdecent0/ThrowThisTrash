@@ -46,14 +46,16 @@ public class Trash_Movement : MonoBehaviour
     {
         if (transform.position.x < dead_Right_Position)
         {
-        transform.position = new Vector3(transform.position.x + 3f, transform.position.y, transform.position.z);
+        // transform.position = new Vector3(transform.position.x + 3f, transform.position.y, transform.position.z);
+        StartCoroutine(ToRight());
         }
     }
     public void MoveLeft()
     {
         if (transform.position.x > dead_Left_Position)
         {
-        transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z);
+            // transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z);
+            StartCoroutine(ToLeft());
         }
     }
     private void FixedUpdate()
@@ -71,18 +73,23 @@ public class Trash_Movement : MonoBehaviour
 
     // Coroutines for direction swipe
 
-    /*IEnumerator ToRight()
+    IEnumerator ToRight()
     {
-        transform.position = new Vector3(transform.position.x+3f, transform.position.y, transform.position.z);
+        for (float ft = 3f; ft >= 0; ft -= 0.5f) 
+    {   
+        transform.position = new Vector3(transform.position.x+0.4f, transform.position.y, transform.position.z);
         yield return null;
+    }
     }
 
     IEnumerator ToLeft()
     {
-        transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z);
-        yield return null;
+        for (float ft = -3f; ft <= 0; ft += 0.5f)
+        {
+            transform.position = new Vector3(transform.position.x - 0.4f, transform.position.y, transform.position.z);
+            yield return null;
+        }
     }
-    */
     private void OnMouseDown()
     {
        swiping.GetTrash(this.gameObject);
