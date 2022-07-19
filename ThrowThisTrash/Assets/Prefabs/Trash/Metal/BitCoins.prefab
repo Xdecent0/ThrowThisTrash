@@ -100,9 +100,10 @@ MonoBehaviour:
   dead_Z_Position: -14
   alive_Z_Position: 14
   alive_Y_Position: 0.3
-  dead_Left_Position: -0.77
-  dead_Right_Position: 3.47
+  dead_Left_Position: -2.5
+  dead_Right_Position: 5.5
   swiping: {fileID: 0}
+  isSwipping: 0
 --- !u!65 &1132643077923525551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114,5 +115,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0866172, y: 0.36497647, z: 0.8364769}
-  m_Center: {x: -0.0070830584, y: 0.18731478, z: -0.05134715}
+  m_Size: {x: 2.0194764, y: 0.8921051, z: 1.8083856}
+  m_Center: {x: -0.0135912895, y: 0.42050695, z: -0.055685878}
