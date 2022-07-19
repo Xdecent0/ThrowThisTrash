@@ -78,7 +78,7 @@ public class Trash_Movement : MonoBehaviour
         if (isSwipping == false)
         {
             isSwipping = true;
-            for (float ft = 3f; ft >= 0; ft -= 0.1f)
+            for (float ft = 3f; ft >= 0; ft -= 0.101f)
             {
                 transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
                 isSwipping = true;
@@ -93,7 +93,7 @@ public class Trash_Movement : MonoBehaviour
         if (isSwipping == false)
         {
             isSwipping = true;
-            for (float ft = -3f; ft <= 0; ft += 0.1f)
+            for (float ft = -3f; ft <= 0; ft += 0.101f)
             {
                 transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
                 isSwipping = true;
