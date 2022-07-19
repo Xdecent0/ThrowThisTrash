@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -248,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6648aed5ec7605d45bf125639eb69cf0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &370190816
@@ -337,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370190816}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 1.5, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -402,6 +406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efe5acaeb7418bd4d8c2fc70517dcac7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &808851669
@@ -518,6 +526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a75ff3e89c3205a48bd40f4c184ab55f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &1367570343
@@ -778,6 +790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1c42c01f9f590674aaeb7366251f1828, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &1922949159
