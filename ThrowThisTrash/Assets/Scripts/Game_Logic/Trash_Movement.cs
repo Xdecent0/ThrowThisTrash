@@ -10,9 +10,9 @@ public class Trash_Movement : MonoBehaviour
     [SerializeField] float alive_Y_Position = 0.3f;
     [SerializeField] float dead_Left_Position = -0.77f;
     [SerializeField] float dead_Right_Position = 3.47f;
-    [SerializeField] Trash_Swiping swiping; 
+    [SerializeField] Trash_Swiping swiping;
 
-    
+    [SerializeField] public bool isSwipping = false;
 
     float firstRoad_pos = -3f;
     float secondRoad_pos = 0f;
@@ -75,20 +75,32 @@ public class Trash_Movement : MonoBehaviour
 
     IEnumerator ToRight()
     {
-        for (float ft = 3f; ft >= 0; ft -= 0.5f) 
-    {   
-        transform.position = new Vector3(transform.position.x+0.4f, transform.position.y, transform.position.z);
-        yield return null;
-    }
+        if (isSwipping == false)
+        {
+            isSwipping = true;
+            for (float ft = 3f; ft >= 0; ft -= 0.1f)
+            {
+                transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+                isSwipping = true;
+                yield return null;
+            }
+        }
+        isSwipping = false;
     }
 
     IEnumerator ToLeft()
     {
-        for (float ft = -3f; ft <= 0; ft += 0.5f)
+        if (isSwipping == false)
         {
-            transform.position = new Vector3(transform.position.x - 0.4f, transform.position.y, transform.position.z);
-            yield return null;
+            isSwipping = true;
+            for (float ft = -3f; ft <= 0; ft += 0.1f)
+            {
+                transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
+                isSwipping = true;
+                yield return null;
+            }
         }
+        isSwipping = false;
     }
     private void OnMouseDown()
     {
