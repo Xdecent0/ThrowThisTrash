@@ -66,12 +66,19 @@ public class Trash_Movement : MonoBehaviour
         transform.Translate(0, 0, movementPerSecond * speed,Space.World);
     }
     // Delete this after adding trash cans
-    private void Update()
+
+    public void OnTriggerEnter(Collider other)
     {
-        if (gameObject.transform.position.z < dead_Z_Position)
+        if (other.gameObject.tag == this.gameObject.tag)
         {
             Destroy(gameObject);
+            spawner.score++;
         }
+        else
+        {
+            Debug.Log("Dura");
+        }
+     
     }
 
     // Coroutines for direction swipe
