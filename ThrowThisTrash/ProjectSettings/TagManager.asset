@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Swipe_Detector
+  - Glass
+  - Metal
+  - Electro
+  - Plastic
+  - Spawner
   layers:
   - Default
   - TransparentFX

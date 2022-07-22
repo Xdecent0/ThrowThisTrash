@@ -248,10 +248,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3317361173928757104, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_TagString
+      value: Electro
+      objectReference: {fileID: 0}
     - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1c42c01f9f590674aaeb7366251f1828, type: 2}
+    - target: {fileID: 9169937539711390409, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Size.z
+      value: 12.37
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &370190816
@@ -406,10 +414,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3317361173928757104, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_TagString
+      value: Plastic
+      objectReference: {fileID: 0}
     - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: efe5acaeb7418bd4d8c2fc70517dcac7, type: 2}
+    - target: {fileID: 9169937539711390409, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Size.z
+      value: 12.37
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1001 &723697241
@@ -419,9 +435,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7198289716378483324, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_Name
       value: Bin_Plastic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_TagString
+      value: Plastic
       objectReference: {fileID: 0}
     - target: {fileID: 3222095251305343874, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_RootOrder
@@ -501,7 +525,7 @@ GameObject:
   - component: {fileID: 808851671}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,6 +567,7 @@ MonoBehaviour:
   - {fileID: 168457733914023154, guid: affb1c26752967043b5024841ab20876, type: 3}
   - {fileID: 2275310255996367731, guid: c132659c3531f784b9eff3f35cde86b1, type: 3}
   spawnDelay: 1.5
+  gameSpeed: -0.5
 --- !u!1001 &862158390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,9 +575,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7198289716378483324, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_Name
       value: Bin_Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     - target: {fileID: 3222095251305343874, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_RootOrder
@@ -627,9 +660,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7198289716378483324, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_Name
       value: Bin_Electro
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_TagString
+      value: Electro
       objectReference: {fileID: 0}
     - target: {fileID: 3222095251305343874, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_RootOrder
@@ -704,9 +745,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7198289716378483324, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_Name
       value: Bin_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 3222095251305343874, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
       propertyPath: m_RootOrder
@@ -833,10 +882,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3317361173928757104, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
     - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1c42c01f9f590674aaeb7366251f1828, type: 2}
+    - target: {fileID: 9169937539711390409, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Size.z
+      value: 12.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169937539711390409, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &1367570343
@@ -1097,10 +1158,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road(1TEST) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3317361173928757104, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 3821689222098445989, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: efe5acaeb7418bd4d8c2fc70517dcac7, type: 2}
+    - target: {fileID: 9169937539711390409, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
+      propertyPath: m_Size.z
+      value: 12.37
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f3b47a635da70408233cbda241aeac, type: 3}
 --- !u!1 &1922949159

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Trash_Movement : MonoBehaviour
 {
-    [SerializeField] float movementPerSecond = -0.5f;
+    [SerializeField] float movementPerSecond;
     [SerializeField] float speed = 0.1f;
     [SerializeField] float dead_Z_Position = -14f;
     [SerializeField] float alive_Z_Position = 14f;
@@ -11,6 +11,7 @@ public class Trash_Movement : MonoBehaviour
     [SerializeField] float dead_Left_Position = -0.77f;
     [SerializeField] float dead_Right_Position = 3.47f;
     [SerializeField] Trash_Swiping swiping;
+    [SerializeField] Trash_Spawner spawner;
 
     [SerializeField] public bool isSwipping = false;
 
@@ -20,6 +21,7 @@ public class Trash_Movement : MonoBehaviour
     float fourthRoad_pos = 6f;
    private void Awake()
     {
+        spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<Trash_Spawner>();
         swiping = GameObject.FindGameObjectWithTag("Swipe_Detector").GetComponent<Trash_Swiping>();
     }
     private void Start()
@@ -60,6 +62,7 @@ public class Trash_Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        movementPerSecond = spawner.gameSpeed;
         transform.Translate(0, 0, movementPerSecond * speed,Space.World);
     }
     // Delete this after adding trash cans
