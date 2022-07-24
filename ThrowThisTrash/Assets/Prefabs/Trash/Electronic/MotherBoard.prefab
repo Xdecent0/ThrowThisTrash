@@ -104,7 +104,7 @@ MonoBehaviour:
   dead_Left_Position: -2.5
   dead_Right_Position: 5.5
   selectedMaterial: {fileID: 2100000, guid: 58504659edee0cf4d8d2acaed5c8a356, type: 2}
-  currentMaterial: {fileID: 0}
+  defaultMaterial: {fileID: 0}
   swiping: {fileID: 0}
   spawner: {fileID: 0}
   isSelected: 0
