@@ -5,7 +5,7 @@ public class Trash_Swiping : MonoBehaviour
     [SerializeField] SwipeListener swipeListener;
     [SerializeField] Trash_Movement trash_Movement;
     [SerializeField] GameObject currentTrash;
-    [SerializeField] GameObject previousTrash;
+    [SerializeField] public GameObject previousTrash;
 
     private void OnEnable()
     {
@@ -33,8 +33,10 @@ public class Trash_Swiping : MonoBehaviour
         previousTrash = currentTrash;
         currentTrash = trash;
         trash_Movement = trash.GetComponent<Trash_Movement>();
-        trash_Movement.isSelected = true;
-        previousTrash.GetComponent<Trash_Movement>().UnselectTrash();
+        if (previousTrash != trash)
+        {
+            previousTrash.GetComponent<Trash_Movement>().UnselectTrash();
+        }
     }
 }
 

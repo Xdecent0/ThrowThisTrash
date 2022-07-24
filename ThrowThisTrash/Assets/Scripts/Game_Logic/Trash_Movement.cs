@@ -120,6 +120,7 @@ public class Trash_Movement : MonoBehaviour
     private void OnMouseDown()
     {
         gameObject.GetComponent<Renderer>().material = selectedMaterial;
+        isSelected = true;
         swiping.GetTrash(this.gameObject);
     }
     public void UnselectTrash()
