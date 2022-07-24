@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 329742366201664166}
   - component: {fileID: 6301989458889878580}
   - component: {fileID: 3774262774318957500}
+  - component: {fileID: 2978780703007049148}
   m_Layer: 0
   m_Name: ToothPaste
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +103,11 @@ MonoBehaviour:
   alive_Y_Position: 0.3
   dead_Left_Position: -2.5
   dead_Right_Position: 5.5
+  selectedMaterial: {fileID: 2100000, guid: a75ff3e89c3205a48bd40f4c184ab55f, type: 2}
+  defaultMaterial: {fileID: 0}
   swiping: {fileID: 0}
+  spawner: {fileID: 0}
+  isSelected: 0
   isSwipping: 0
 --- !u!65 &3774262774318957500
 BoxCollider:
@@ -117,3 +122,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0496969, y: 0.8206434, z: 2.3556376}
   m_Center: {x: -0.012064756, y: 0.41146064, z: -0.1342898}
+--- !u!54 &2978780703007049148
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2275310255996367731}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

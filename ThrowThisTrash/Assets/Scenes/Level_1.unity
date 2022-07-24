@@ -1296,6 +1296,13 @@ MonoBehaviour:
   trash:
   - {fileID: 2888455828216099442, guid: 233c0851395598340bad7e4f05636650, type: 3}
   - {fileID: 5345984340008500252, guid: d0cc2bcb36cc65c46a861de66455c0af, type: 3}
+  - {fileID: 5236742550496197264, guid: 91ff09f5463740b478b1af7b58fe20b5, type: 3}
+  - {fileID: 4537154519027220258, guid: 628eebd9881e9b640a6af50e5bb27b4a, type: 3}
+  - {fileID: 9219640925356935340, guid: 3bf27f0c6fdd8174ca047a43623eee87, type: 3}
+  - {fileID: 3142495313790268889, guid: 1141f2df39222b944a3384cad97a0f64, type: 3}
+  - {fileID: 3799325942444702336, guid: bce67e9cf429c65458c7a92fa1c86325, type: 3}
+  - {fileID: 168457733914023154, guid: affb1c26752967043b5024841ab20876, type: 3}
+  - {fileID: 2275310255996367731, guid: c132659c3531f784b9eff3f35cde86b1, type: 3}
   score: 0
   spawnDelay: 1.5
   gameSpeed: -0.5
