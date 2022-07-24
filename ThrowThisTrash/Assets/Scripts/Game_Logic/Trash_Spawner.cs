@@ -18,8 +18,7 @@ public class Trash_Spawner : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnDelay);
             Instantiate(trash[Random.Range(0, trash.Length)]);
-           // compacity
-            gameSpeed -= 0.05f;
+            gameSpeed -= 0.025f;
         }
     }
 }

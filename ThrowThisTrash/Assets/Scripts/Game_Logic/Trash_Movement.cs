@@ -5,14 +5,19 @@ public class Trash_Movement : MonoBehaviour
 {
     [SerializeField] float movementPerSecond;
     [SerializeField] float speed = 0.1f;
+
     [SerializeField] float dead_Z_Position = -14f;
     [SerializeField] float alive_Z_Position = 14f;
     [SerializeField] float alive_Y_Position = 0.3f;
     [SerializeField] float dead_Left_Position = -0.77f;
     [SerializeField] float dead_Right_Position = 3.47f;
+
+    [SerializeField] Material selectedMaterial;
+    [SerializeField] Material defaultMaterial;
     [SerializeField] Trash_Swiping swiping;
     [SerializeField] Trash_Spawner spawner;
 
+    [SerializeField] public bool isSelected = false;
     [SerializeField] public bool isSwipping = false;
 
     float firstRoad_pos = -3f;
@@ -21,6 +26,7 @@ public class Trash_Movement : MonoBehaviour
     float fourthRoad_pos = 6f;
    private void Awake()
     {
+        defaultMaterial = GetComponent<Renderer>().material;
         spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<Trash_Spawner>();
         swiping = GameObject.FindGameObjectWithTag("Swipe_Detector").GetComponent<Trash_Swiping>();
     }
@@ -65,7 +71,6 @@ public class Trash_Movement : MonoBehaviour
         movementPerSecond = spawner.gameSpeed;
         transform.Translate(0, 0, movementPerSecond * speed,Space.World);
     }
-    // Delete this after adding trash cans
 
     public void OnTriggerEnter(Collider other)
     {
@@ -114,6 +119,12 @@ public class Trash_Movement : MonoBehaviour
     }
     private void OnMouseDown()
     {
-       swiping.GetTrash(this.gameObject);
+        gameObject.GetComponent<Renderer>().material = selectedMaterial;
+        swiping.GetTrash(this.gameObject);
+    }
+    public void UnselectTrash()
+    {
+        isSelected = false;
+        gameObject.GetComponent<Renderer>().material = defaultMaterial;
     }
 }
