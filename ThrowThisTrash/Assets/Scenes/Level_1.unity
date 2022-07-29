@@ -324,7 +324,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 102102132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1555635398}
+        m_TargetAssemblyTypeName: Pause_Manager, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &102102132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1086,8 +1098,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.26597, y: 2.9740727, z: 2.6}
-  m_Center: {x: 0, y: 1.58, z: 0}
+  m_Size: {x: 2.26597, y: 3.8827415, z: 1.2073715}
+  m_Center: {x: 0, y: 2.0343344, z: 0.6963142}
 --- !u!1 &714099742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2286,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1352702648}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1555635398}
+        m_TargetAssemblyTypeName: Pause_Manager, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1352702648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2500,9 +2524,10 @@ GameObject:
   - component: {fileID: 1555635397}
   - component: {fileID: 1555635396}
   - component: {fileID: 1555635395}
+  - component: {fileID: 1555635398}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Pause
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2594,6 +2619,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1555635398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555635393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a158dab568105be45be5ddb90da14f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 464710033}
+  deathMenu: {fileID: 1521304521}
 --- !u!1 &1566173822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,7 +2714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1566173825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1555635398}
+        m_TargetAssemblyTypeName: Pause_Manager, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1566173825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2952,7 +3003,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652450788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1555635398}
+        m_TargetAssemblyTypeName: Pause_Manager, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652450788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3007,8 +3070,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.26597, y: 2.9740727, z: 2.6}
-  m_Center: {x: 0, y: 1.58, z: 0}
+  m_Size: {x: 2.26597, y: 3.8827415, z: 1.2073715}
+  m_Center: {x: 0, y: 2.0343344, z: 0.6963142}
 --- !u!1 &1755062215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2881457291582206264, guid: e84f5c3ba7306f74fa88feb17adc7988, type: 3}
@@ -3025,8 +3088,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.26597, y: 2.9740727, z: 2.6}
-  m_Center: {x: 0, y: 1.58, z: 0}
+  m_Size: {x: 2.26597, y: 3.8827415, z: 1.2073715}
+  m_Center: {x: 0, y: 2.0343344, z: 0.6963142}
 --- !u!1 &1805308326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,7 +3644,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200.1
+  m_fontSize: 119.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3647,8 +3710,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.26597, y: 2.9740727, z: 2.6}
-  m_Center: {x: 0, y: 1.58, z: 0}
+  m_Size: {x: 2.26597, y: 3.8827415, z: 1.2073715}
+  m_Center: {x: 0, y: 2.0343344, z: 0.6963142}
 --- !u!1 &2112892076
 GameObject:
   m_ObjectHideFlags: 0

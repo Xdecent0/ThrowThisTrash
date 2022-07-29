@@ -16,6 +16,7 @@ public class Trash_Movement : MonoBehaviour
     [SerializeField] Material defaultMaterial;
     [SerializeField] Trash_Swiping swiping;
     [SerializeField] Trash_Spawner spawner;
+    [SerializeField] Pause_Manager pause_Manager;
 
     [SerializeField] public bool isSelected = false;
     [SerializeField] public bool isSwipping = false;
@@ -26,6 +27,7 @@ public class Trash_Movement : MonoBehaviour
     float fourthRoad_pos = 6f;
    private void Awake()
     {
+        pause_Manager = GameObject.FindGameObjectWithTag("Pause").GetComponent<Pause_Manager>();
         defaultMaterial = GetComponent<Renderer>().material;
         spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<Trash_Spawner>();
         swiping = GameObject.FindGameObjectWithTag("Swipe_Detector").GetComponent<Trash_Swiping>();
@@ -81,13 +83,10 @@ public class Trash_Movement : MonoBehaviour
         }
         else
         {
-            Debug.Log("Dura");
+            pause_Manager.Death();
         }
      
     }
-
-    // Coroutines for direction swipe
-
     IEnumerator ToRight()
     {
         if (isSwipping == false)
