@@ -7,6 +7,7 @@ public class Trash_Swiping : MonoBehaviour
     [SerializeField] GameObject currentTrash;
     [SerializeField] public GameObject previousTrash;
 
+
     private void OnEnable()
     {
         swipeListener.OnSwipe.AddListener(OnSwipe);

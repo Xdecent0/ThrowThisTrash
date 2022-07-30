@@ -83,6 +83,10 @@ public class Trash_Movement : MonoBehaviour
         }
         else
         {
+            if (spawner.score > GameDataManager.GetScore())
+            {
+                GameDataManager.SetScore(spawner.score);
+            }
             pause_Manager.Death();
         }
      
