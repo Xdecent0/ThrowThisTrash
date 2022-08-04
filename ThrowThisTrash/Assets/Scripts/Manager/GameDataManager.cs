@@ -13,6 +13,7 @@ using System.Collections.Generic;
 public class PlayerData
 {
 	public int coins = 0;
+	public int diamonds = 0;
 	public int score = 0;
 }
 
@@ -69,10 +70,31 @@ public static class GameDataManager
 		playerData.coins -= amount;
 		// SavePlayerData();
 	}
+	public static int GetDiamonds()
+	{
+		return playerData.diamonds;
+	}
+
+	public static void AddDiamonds(int amount)
+	{
+		playerData.diamonds += amount;
+		// SavePlayerData();
+	}
+
+	public static bool CanSpendDiamonds(int amount)
+	{
+		return (playerData.diamonds >= amount);
+	}
+
+	public static void SpendDiamonds(int amount)
+	{
+		playerData.diamonds -= amount;
+		// SavePlayerData();
+	}
 
 	public static int GetScore()
 	{
-		return playerData.coins;
+		return playerData.score;
 	}
 
 	public static void SetScore(int amount)
