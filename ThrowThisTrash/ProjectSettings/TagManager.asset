@@ -10,6 +10,7 @@ TagManager:
   - Electro
   - Plastic
   - Spawner
+  - Pause
   layers:
   - Default
   - TransparentFX
