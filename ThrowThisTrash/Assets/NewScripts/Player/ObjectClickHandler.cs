@@ -11,7 +11,9 @@ public class ObjectClickHandler : MonoBehaviour
     [SerializeField] private ObjectSwipeHandler swipeHandler;
 
     [Header("Selection")]
+    [SerializeField] private ObjectSpawner objectSpawner;
     [SerializeField] private static ObjectClickHandler selectedObject;
+    [SerializeField] private bool isBomb = false;
 
     [Header("Swipe Parameters")]
     [SerializeField][Range(-10f, 10f)] private float deadLeftPosition = -0.9f;
@@ -20,6 +22,7 @@ public class ObjectClickHandler : MonoBehaviour
 
     private void Awake()
     {
+        objectSpawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<ObjectSpawner>();
         renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
@@ -30,6 +33,17 @@ public class ObjectClickHandler : MonoBehaviour
         if (swipeDetector != null)
         {
             swipeHandler = swipeDetector.GetComponent<ObjectSwipeHandler>();
+        }
+    }
+
+    private void Update()
+    {
+        if (transform.position.z > deadLeftPosition || transform.position.z < deadRightPosition)
+        {
+            if (isBomb)
+            {
+                objectSpawner.ReturnObjectToPool(gameObject);
+            }
         }
     }
 
